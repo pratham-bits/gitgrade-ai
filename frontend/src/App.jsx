@@ -15,7 +15,7 @@ function App() {
 
     try {
       const res = await fetch(
-        `http://127.0.0.1:8000/analyze?repo_url=${repoUrl}`
+        `https://gitgrade-backend.onrender.com/analyze?repo_url=${repoUrl}`
       );
       const data = await res.json();
       setResult(data);
